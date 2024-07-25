@@ -1,0 +1,385 @@
+/* Importación de fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,700&display=swap');
+
+/* Variables de color */
+:root{
+    --color-text: #000000;
+    --color-prim: #0059ff;
+}
+
+/* Estilos globales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 71px;
+    box-sizing: border-box;
+}
+
+/* Estilos del header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #f9f6f4;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+
+.logo{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+#icono-menu{
+    display: none;
+}
+
+.logo span{
+    color: var(--color-prim);
+}
+
+/* Estilos de la navegación */
+.navbar{
+    display: flex;
+}
+
+.navbar li{
+    list-style: none;
+}
+
+.navbar a{
+    padding: 10px;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+.navbar a:hover{
+    color: var(--color-prim);
+}
+
+/* Estilos de la sección de inicio */
+.inicio{
+    background-image: url('../img/fondo.png');
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+    height: auto;
+}
+
+.texto-inicio{
+    width: 100%;
+    max-width: 600px;
+}
+
+.texto-inicio h1{
+    font-size: 2rem;
+}
+
+.texto-inicio span{
+    color: var(--color-prim);
+}
+
+.texto-inicio p{
+    margin: 0.5rem 0 1rem;
+}
+
+/* Estilos del botón */
+.boton{
+    background-color: var(--color-prim);
+    color: white;
+    padding: 10px;
+    border-radius: 0.3rem;
+}
+
+.boton:hover{
+    background-color: #00ffdd;
+}
+
+/* Estilos de la sección de destinos */
+.cabecera {
+    padding: 2%;
+    text-align: left;
+    margin: 10px 0;
+    padding-left: 2%;
+    font-family: Arial, sans-serif;
+}
+
+.cabecera h3{
+    font-weight: 300;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    padding: 0 2% 20px;
+}
+
+.caja {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.caja img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.caja p{
+    margin: 5px 0;
+    color: dimgray;
+}
+
+.caja span{
+    color: var(--color-prim);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.informacion{
+    text-align: center;
+}
+
+/* Estilos del enlace "ver más destinos" */
+#ver_mas_destinos {
+    color: red;
+    text-decoration: none;
+}
+
+#ver_mas_destinos:hover{
+    color: var(--color-prim);
+}
+
+/* Estilos de las etiquetas económicas y de millas */
+.economico{
+    background-color: #8a3ab9;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.millas{
+    background-color: #ffd700;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* Estilos de la sección de alojamientos */
+.contenedor-alojamientos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2.2rem;
+    padding: 0 2% 20px;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: var(--color-prim);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    text-align: center;
+    position: relative; 
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.derechos{
+    font-weight: 300;
+}
+
+.Contactanos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilos del footer superior */
+.top-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.redes {
+    margin: 10px 0;
+}
+
+.redes a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.redes a:hover {
+    color: #00ffdd;
+}
+
+/* Estilos del footer inferior */
+.bottom-footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.Informacion_legal, .Servicio_cliente, .Apoyo_sitio{
+    margin-top: 10px;
+    color: var(--color-text);
+    text-align: left;
+    padding-left: 2%;
+}
+
+.Informacion_legal p, .Servicio_cliente p, .Apoyo_sitio p{
+    margin: 5px 0;
+    font-weight: 400;
+}
+
+/* Para dispositivos móviles */
+@media (max-width: 650px) {
+    .navbar{
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #icono-menu{
+        display: initial;
+        font-size: 2rem;
+    }
+
+    .navbar{
+        display: block;
+    }
+
+    .navbar.activo{
+        top: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    .texto-inicio{
+        font-size: 0.8rem;
+        margin-top: 50px;
+    }
+    .texto-inicio h1 {
+        font-size: 1.1rem; 
+    }
+
+    .texto-inicio {
+        width: 90%; 
+        padding: 20px; 
+    }
+
+    .inicio {
+        background-size: cover;
+        height: auto;
+        padding: 20px; 
+        background-position: center;
+    }
+
+    .cabecera h2, .cabecera h3 {
+        font-size: 1.2rem; 
+    }
+
+    .contenedor {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        padding: 0 10px; 
+    }
+
+    .bottom-footer {
+        grid-template-columns: 1fr; 
+        gap: 10px; 
+    }
+
+    .Informacion_legal, .Servicio_cliente, .Apoyo_sitio {
+        padding-left: 0;
+        text-align: center; 
+    }
+}
+@media (min-width: 501px) and (max-width: 890px) {
+    .texto-inicio {
+        font-size: 1.1rem;
+        width: 85%;
+        padding: 20px;
+    }
+
+    .texto-inicio h1 {
+        font-size: 1.8rem;
+    }
+
+    .inicio {
+        background-size: cover;
+        height: auto;
+        padding: 20px;
+        background-position: center;
+    }
+
+    .cabecera h2, .cabecera h3 {
+        font-size: 1.4rem;
+    }
+
+    .contenedor {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 0 2%;
+    }
+
+    .caja img {
+        height: 180px;
+    }
+
+    .bottom-footer {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+    }
+
+    .Informacion_legal, .Servicio_cliente, .Apoyo_sitio {
+        padding-left: 0;
+        text-align: center;
+    }
+}
